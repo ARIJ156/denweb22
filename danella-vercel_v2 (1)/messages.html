@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semua Pesan — DANELLA</title>
+  <meta name="description" content="Semua pesan dari fans untuk Danella (Dena Natalia Ang), member JKT48 Generasi 11." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="theme-danella.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=Caveat:wght@500;600;700&family=Kaushan+Script&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Sprite ikon dekoratif (tema Danella) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="dnFlameGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#ffd59a"/>
+        <stop offset="1" stop-color="#ff7a1a"/>
+      </linearGradient>
+    </defs>
+    <symbol id="i-flame" viewBox="0 0 120 150">
+      <path fill="url(#dnFlameGrad)" fill-rule="evenodd" d="M60 4C66 30 98 42 100 80C102 112 84 142 60 146C34 142 18 118 22 88C24 70 34 60 40 44C44 52 48 56 54 54C50 38 54 20 60 4ZM60 126C40 112 38 94 48 88C54 84 60 88 60 94C60 88 66 84 72 88C82 94 80 112 60 126Z"/>
+      <path fill="url(#dnFlameGrad)" opacity=".8" d="M24 92C6 84 4 62 14 46C17 60 24 66 32 70Z"/>
+      <path fill="url(#dnFlameGrad)" opacity=".8" d="M98 84C114 74 116 56 108 42C103 56 96 62 90 66Z"/>
+    </symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"/></symbol>
+    <symbol id="i-crown" viewBox="0 0 32 28"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 22L2 7l8 6 6-10 6 10 8-6-2 15zM5 26h22"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21C5 15 2 11.2 2 7.6 2 4.6 4.4 2.6 7 2.6c2 0 3.9 1.1 5 3 1.1-1.9 3-3 5-3 2.6 0 5 2 5 5 0 3.600-3 7.400-10 13.400z" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 64 64">
+      <path fill="currentColor" d="M26 8C14 8 5 15.500 5 25c0 4.500 2 8.500 5.500 11.500L8 46l10-4.500c2.500.8 5 1 8 1 12 0 21-7.500 21-17.500S38 8 26 8z"/>
+      <path fill="currentColor" opacity=".72" d="M52 28c5 3 8 7 8 12 0 3.500-1.500 6.500-4 9l2 8-8-3.500c-2 .7-4 1-6.500 1-6 0-11-2.500-14-6.500 10-1 19-8 22.500-20z"/>
+      <circle cx="19" cy="25" r="2.600" fill="#5a2404"/><circle cx="27" cy="25" r="2.600" fill="#5a2404"/><circle cx="35" cy="25" r="2.600" fill="#5a2404"/>
+    </symbol>
+    <symbol id="i-people" viewBox="0 0 64 64">
+      <circle cx="32" cy="22" r="9" fill="currentColor"/>
+      <path fill="currentColor" d="M14 52c0-10 8-16 18-16s18 6 18 16z"/>
+      <circle cx="13" cy="26" r="6.500" fill="currentColor" opacity=".7"/>
+      <path fill="currentColor" opacity=".7" d="M1 50c0-8 5-12.500 12-12.500 2 0 3.500.3 5 1-4 3-6.500 7-7 11.500z"/>
+      <circle cx="51" cy="26" r="6.500" fill="currentColor" opacity=".7"/>
+      <path fill="currentColor" opacity=".7" d="M63 50c0-8-5-12.500-12-12.500-2 0-3.500.3-5 1 4 3 6.500 7 7 11.500z"/>
+    </symbol>
+  </svg>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="denalizelogo.png" alt="Denalize Logo" class="logo-img" width="42" height="42" />
+        <span>DANELLA</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html#profil">Profil</a>
+        <a href="index.html#tentang">Tentang</a>
+        <a href="index.html#karya">Galeri</a>
+        <a href="index.html#dear">Dear Danella</a>
+        <a href="index.html#kontak">Kontak</a>
+      </nav>
+
+      <a href="index.html#dear" class="btn-primary nav-cta">Kembali</a>
+
+      <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="all-messages">
+    <div class="deco deco-note deco-note-tl" aria-hidden="true"><span class="crown"><svg viewBox="0 0 32 28" aria-hidden="true"><use href="#i-crown"/></svg></span><span>Always<br />with you<br />Dena <span class="heart-i"><svg viewBox="0 0 24 24" aria-hidden="true" style="fill:none;stroke:currentColor;stroke-width:1.8"><use href="#i-heart"/></svg></span></span></div>
+    <div class="deco deco-note deco-note-tr" aria-hidden="true"><span>Passion<br />Never<br />Stops <span class="heart-i"><svg viewBox="0 0 24 24" aria-hidden="true" style="fill:none;stroke:currentColor;stroke-width:1.8"><use href="#i-heart"/></svg></span></span></div>
+    <div class="deco deco-note deco-note-bl" aria-hidden="true"><span class="crown"><svg viewBox="0 0 32 28" aria-hidden="true"><use href="#i-crown"/></svg></span><span>Team<br />Passion<br />Dena <span class="heart-i"><svg viewBox="0 0 24 24" aria-hidden="true" style="fill:none;stroke:currentColor;stroke-width:1.8"><use href="#i-heart"/></svg></span></span></div>
+    <div class="deco deco-flame deco-flame-tr" aria-hidden="true"><svg viewBox="0 0 120 150"><use href="#i-flame"/></svg></div>
+    <div class="deco deco-flame deco-flame-br" aria-hidden="true"><svg viewBox="0 0 120 150"><use href="#i-flame"/></svg></div>
+    <span class="deco deco-spark s1" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-spark"/></svg></span>
+    <span class="deco deco-spark s2" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-spark"/></svg></span>
+    <span class="deco deco-spark s3" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-spark"/></svg></span>
+
+    <div class="all-messages-inner">
+      <div class="all-messages-header">
+        <p class="eyebrow light">— DEAR DANELLA —</p>
+        <h1>Semua Pesan untuk Danella <span class="heart-i"><svg viewBox="0 0 24 24" aria-hidden="true" style="fill:none;stroke:currentColor;stroke-width:1.8"><use href="#i-heart"/></svg></span></h1>
+        <p class="all-messages-count" id="allMessagesCount"></p>
+      </div>
+
+      <div class="msg-grid" id="msgGrid"></div>
+      <nav class="msg-pagination" id="msgPagination" aria-label="Halaman pesan"></nav>
+
+      <div class="back-wrap"><a href="index.html#dear" class="back-btn">&larr; Kembali</a></div>
+    </div>
+  </main>
+
+  <!-- Detail pesan -->
+  <div class="popup-overlay" id="msgDetailPopup" hidden>
+    <div class="popup-box msg-detail-box" role="dialog" aria-modal="true" aria-labelledby="msgDetailName">
+      <h3 class="msg-detail-name" id="msgDetailName"></h3>
+      <p class="msg-detail-date" id="msgDetailDate"></p>
+      <p class="msg-detail-text" id="msgDetailText"></p>
+      <div class="admin-actions" id="msgDetailAdmin" hidden>
+        <button type="button" class="btn-outline-light" id="msgDetailEdit">Edit</button>
+        <button type="button" class="btn-outline-light" id="msgDetailDelete">Hapus</button>
+      </div>
+      <div class="admin-actions">
+        <button type="button" class="btn-gold" id="msgDetailClose">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 Danella × Denalize</p>
+    <p>Indonesia</p>
+  </footer>
+
+  <script type="module" src="messages.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+/* Jadwal show JKT48 (bagian Tentang) — putih & Tiffany blue */
+.schedule-card { padding: 1.6rem 1.5rem; }
+.sched-head { display: flex; align-items: center; gap: .8rem; margin-bottom: 1rem; }
+.sched-head .card-label { margin: 0; }
+.sched-head h3 { font-size: 1.25rem; line-height: 1.2; }
+.sched-sub { color: var(--text-muted); font-size: .88rem; margin-bottom: 1.1rem; }
+.sched-body { display: grid; gap: .85rem; max-height: 560px; overflow: auto; padding: 2px 4px 2px 2px; }
+.sched-item {
+  border: 1px solid var(--tosca-200); border-radius: 14px; padding: 1rem 1.1rem;
+  background: linear-gradient(160deg, var(--white), var(--tosca-50));
+}
+.sched-item:hover { border-color: var(--tosca-400); }
+.sched-badge {
+  display: inline-flex; align-items: center; gap: .4rem;
+  background: var(--tosca-500); color: #fff; font-weight: 600; font-size: .78rem;
+  letter-spacing: .04em; padding: .3rem .75rem; border-radius: 999px; margin-bottom: .6rem;
+}
+.sched-badge svg { width: 14px; height: 14px; }
+.sched-item h4 { font-family: var(--font-serif); font-size: 1.1rem; color: var(--text); margin-bottom: .25rem; }
+.sched-date { color: var(--tosca-700); font-size: .92rem; font-weight: 500; }
+.sched-msg, .sched-empty { color: var(--text-muted); font-size: .95rem; line-height: 1.6; text-align: center; padding: 1.2rem .5rem; }
+.sched-msg code { background: var(--tosca-100); padding: .1rem .4rem; border-radius: 6px; }
+.sched-empty-ico { display: inline-flex; width: 44px; height: 44px; align-items: center; justify-content: center; background: var(--tosca-100); color: var(--tosca-600); border-radius: 50%; margin-bottom: .5rem; }
+.sched-empty-ico svg { width: 22px; height: 22px; }
+.sched-empty strong { color: var(--tosca-800); }
+.sched-foot, .sched-empty small { display: block; color: var(--text-muted); opacity: .8; font-size: .78rem; text-align: center; }
+.sched-loading { color: var(--text-muted); text-align: center; padding: 1.5rem 0; animation: schedPulse 1.2s ease-in-out infinite; }
+@keyframes schedPulse { 50% { opacity: .45; } }
+.sched-sub-title, .sched-venue { color: var(--text-muted); font-size: .85rem; margin-bottom: .2rem; }

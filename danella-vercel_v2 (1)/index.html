@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DANELLA — Denalize</title>
+  <meta name="description" content="Fan page resmi komunitas Denalize untuk Danella (Dena Natalia Ang), member JKT48 Generasi 11." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="theme-danella.css" />
+  <link rel="stylesheet" href="jadwal.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=Caveat:wght@500;600;700&family=Kaushan+Script&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Sprite ikon dekoratif (tema Danella) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="dnFlameGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#ffd59a"/>
+        <stop offset="1" stop-color="#ff7a1a"/>
+      </linearGradient>
+    </defs>
+    <symbol id="i-flame" viewBox="0 0 120 150">
+      <path fill="url(#dnFlameGrad)" fill-rule="evenodd" d="M60 4C66 30 98 42 100 80C102 112 84 142 60 146C34 142 18 118 22 88C24 70 34 60 40 44C44 52 48 56 54 54C50 38 54 20 60 4ZM60 126C40 112 38 94 48 88C54 84 60 88 60 94C60 88 66 84 72 88C82 94 80 112 60 126Z"/>
+      <path fill="url(#dnFlameGrad)" opacity=".8" d="M24 92C6 84 4 62 14 46C17 60 24 66 32 70Z"/>
+      <path fill="url(#dnFlameGrad)" opacity=".8" d="M98 84C114 74 116 56 108 42C103 56 96 62 90 66Z"/>
+    </symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"/></symbol>
+    <symbol id="i-crown" viewBox="0 0 32 28"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 22L2 7l8 6 6-10 6 10 8-6-2 15zM5 26h22"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21C5 15 2 11.2 2 7.6 2 4.6 4.4 2.6 7 2.6c2 0 3.9 1.1 5 3 1.1-1.9 3-3 5-3 2.6 0 5 2 5 5 0 3.600-3 7.400-10 13.400z" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 64 64">
+      <path fill="currentColor" d="M26 8C14 8 5 15.500 5 25c0 4.500 2 8.500 5.500 11.500L8 46l10-4.500c2.500.8 5 1 8 1 12 0 21-7.500 21-17.500S38 8 26 8z"/>
+      <path fill="currentColor" opacity=".72" d="M52 28c5 3 8 7 8 12 0 3.500-1.500 6.500-4 9l2 8-8-3.500c-2 .7-4 1-6.500 1-6 0-11-2.500-14-6.500 10-1 19-8 22.500-20z"/>
+      <circle cx="19" cy="25" r="2.600" fill="#5a2404"/><circle cx="27" cy="25" r="2.600" fill="#5a2404"/><circle cx="35" cy="25" r="2.600" fill="#5a2404"/>
+    </symbol>
+    <symbol id="i-people" viewBox="0 0 64 64">
+      <circle cx="32" cy="22" r="9" fill="currentColor"/>
+      <path fill="currentColor" d="M14 52c0-10 8-16 18-16s18 6 18 16z"/>
+      <circle cx="13" cy="26" r="6.500" fill="currentColor" opacity=".7"/>
+      <path fill="currentColor" opacity=".7" d="M1 50c0-8 5-12.500 12-12.500 2 0 3.500.3 5 1-4 3-6.500 7-7 11.500z"/>
+      <circle cx="51" cy="26" r="6.500" fill="currentColor" opacity=".7"/>
+      <path fill="currentColor" opacity=".7" d="M63 50c0-8-5-12.500-12-12.500-2 0-3.500.3-5 1 4 3 6.500 7 7 11.500z"/>
+    </symbol>
+  </svg>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a class="logo">
+        <img src="denalizelogo.png" alt="Denalize Logo" class="logo-img" width="42" height="42" />
+        <span>DANELLA</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#profil">Profil</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#karya">Galeri</a>
+        <a href="#dear">Dear Danella</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+
+      <a class="btn-primary nav-cta">Danella</a>
+
+      <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="profil" class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">— SATU WADAH SATU TUJUAN</p>
+      <h1>
+        Satu garis wajah,<br />
+        satu warna <em>Tiffany blue</em> yang<br />
+        sama.
+      </h1>
+      <p class="hero-desc">
+        Danella, Member JKT48 Generasi 11 yang diperkenalkan pada tanggal
+        <strong>30 Oktober 2022</strong>. Menjalani show pertamanya di
+        <strong>Aitakatta</strong>. Lahir pada 16 Desember 2005 dan memiliki nama
+        asli <strong>Dena Natalia Ang</strong>.
+      </p>
+      <div class="hero-actions">
+        <a href="profil.html" class="btn-primary">Profil Lengkap</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="image-frame">
+        <img src="danella.jpg" alt="Danella JKT48" />
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO SECTION -->
+  <section class="video-section">
+    <div class="video-player">
+      <div class="video-frame">
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          disablePictureInPicture
+          controlslist="nodownload noplaybackrate noremoteplayback"
+        >
+          <source src="intro.mp4" type="video/mp4" />
+          Browser kamu tidak mendukung video.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- WAVE -->
+  <div class="soft-wave">
+    <svg class="wave wave-1" viewBox="0 0 2880 110" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,62 C240,22 480,22 720,62 S1200,102 1440,62 C1680,22 1920,22 2160,62 S2640,102 2880,62 L2880,110 L0,110 Z" fill="#e8f5f0"/>
+    </svg>
+    <svg class="wave wave-2" viewBox="0 0 2880 110" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,76 C240,46 480,46 720,76 S1200,106 1440,76 C1680,46 1920,46 2160,76 S2640,106 2880,76 L2880,110 L0,110 Z" fill="#d4ebe4"/>
+    </svg>
+    <svg class="wave wave-3" viewBox="0 0 2880 110" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,90 C240,66 480,66 720,90 S1200,114 1440,90 C1680,66 1920,66 2160,90 S2640,114 2880,90 L2880,110 L0,110 Z" fill="#c5e4db"/>
+    </svg>
+  </div>
+
+  <!-- TENTANG DANELLA -->
+  <section id="tentang" class="tentang">
+    <div class="tentang-left">
+      <p class="eyebrow">— TENTANG DANELLA</p>
+      <h2>Dari satu gerakan,<br />jadi satu identitas visual yang indah.</h2>
+      <p>
+        Danella adalah anggota JKT48 Generasi 11 yang memiliki kembaran di generasi
+        yang sama. Sebagai idol, ia dikenal dengan kelembutan dan ketulusan yang
+        selalu hadir di setiap penampilannya. Sebagai dancer, ia menemukan cara
+        lain untuk berbicara melalui garis, siluet, dan gerakan yang indah.
+      </p>
+    </div>
+
+    <div class="tentang-cards">
+      <div class="info-card schedule-card" id="showSchedule">
+        <div class="sched-head">
+          <div>
+            <p class="card-label">— JADWAL SHOW JKT48</p>
+            <h3>Kapan Dena tampil?</h3>
+          </div>
+        </div>
+        <p class="sched-sub">Show theater JKT48 yang line-up-nya ada Dena (Danella).</p>
+        <div class="sched-body" aria-live="polite">
+          <p class="sched-loading">Memuat jadwal show…</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERI / KEBERAMAAN -->
+  <section id="karya" class="karya">
+    <div class="karya-header">
+      <h2>Galeri</h2>
+      <div class="karya-header-actions">
+        <div class="filter-btns">
+          <button class="filter-btn active" data-filter="all">Semua</button>
+          <button class="filter-btn" data-filter="potret">Album</button>
+          <button class="filter-btn" data-filter="identitas">Danella & GEN 11</button>
+          <button class="filter-btn" data-filter="project">Project</button>
+        </div>
+        <button type="button" class="btn-add-foto" id="addFotoBtn" hidden>+ Tambah Foto</button>
+        <button type="button" class="admin-chip" id="adminChip" hidden title="Keluar dari mode admin"></button>
+      </div>
+    </div>
+
+    <div class="karya-grid" id="karyaGrid">
+    </div>
+  </section>
+
+  <!-- Popup login admin (Google) -->
+  <div class="popup-overlay" id="adminPopup" hidden>
+    <div class="popup-box admin-box">
+      <h3>Login Admin</h3>
+      <p class="admin-desc">Masuk dengan akun Google yang terdaftar sebagai developer/admin untuk mengelola pesan dan galeri.</p>
+      <div class="google-btn-wrap"><button type="button" class="btn-google" id="adminLoginBtn">Masuk dengan Google</button></div>
+      <p class="admin-msg" id="adminMsg" hidden></p>
+      <div class="admin-actions">
+        <button type="button" class="btn-outline-light" id="adminCancelBtn">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup verifikasi email (otomatis saat website dibuka) -->
+  <div class="popup-overlay" id="authPopup" hidden>
+    <div class="popup-box admin-box auth-box" role="dialog" aria-modal="true" aria-labelledby="authPopupTitle">
+      <h3 id="authPopupTitle">Verifikasi Email</h3>
+      <p class="admin-desc" id="authPopupDesc">Verifikasi email kamu dengan Google atau lewat link yang dikirim ke emailmu. Atau lanjut sebagai tamu untuk melihat-lihat.</p>
+
+      <div class="auth-providers">
+        <button type="button" class="btn-google" id="authGoogleBtn">Verifikasi dengan Google</button>
+      </div>
+
+      <div class="auth-divider"><span>atau lewat link email</span></div>
+
+      <form id="authEmailForm" class="admin-form" novalidate>
+        <div class="form-group">
+          <input type="email" id="authEmail" placeholder="Email kamu" autocomplete="email" />
+        </div>
+        <button type="submit" class="btn-gold" id="authEmailSubmit">Kirim Link Verifikasi</button>
+      </form>
+
+      <div class="auth-divider"><span>atau</span></div>
+      <button type="button" class="btn-outline-light auth-guest" id="authGuestBtn">Lanjut sebagai Tamu</button>
+      <p class="auth-note">Tamu dapat melihat semua konten, tapi tidak dapat mengirim pesan.</p>
+
+      <p class="admin-msg" id="authPopupMsg" hidden></p>
+    </div>
+  </div>
+
+  <!-- Modal Tambah Foto (admin) -->
+  <div class="popup-overlay" id="fotoPopup" hidden>
+    <div class="popup-box admin-box">
+      <h3 id="fotoPopupTitle">Tambah Foto Galeri</h3>
+      <p class="admin-desc">Foto akan langsung tampil di galeri.</p>
+      <form id="fotoForm" class="admin-form">
+        <div class="form-group">
+          <input type="text" id="fotoTitle" placeholder="Judul foto" required maxlength="40" />
+        </div>
+        <div class="form-group">
+          <input type="text" id="fotoDesc" placeholder="Deskripsi singkat" required maxlength="80" />
+        </div>
+        <div class="form-group">
+          <select id="fotoCategory" required>
+            <option value="potret">Album</option>
+            <option value="identitas">Danella &amp; GEN 11</option>
+            <option value="project">Project</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="url" id="fotoLink" placeholder="Link postingan (opsional, https://...)" maxlength="300" />
+        </div>
+        <div class="form-group">
+          <label class="foto-upload-label" for="fotoFile">
+            <span id="fotoFileLabel">Pilih gambar (otomatis dikecilkan)</span>
+          </label>
+          <input type="file" id="fotoFile" accept="image/*" hidden />
+        </div>
+        <div class="foto-preview-wrap" id="fotoPreviewWrap" hidden>
+          <img id="fotoPreview" alt="Pratinjau" />
+        </div>
+        <p class="admin-msg" id="fotoError" hidden></p>
+        <div class="admin-actions">
+          <button type="button" class="btn-outline-light" id="fotoCancelBtn">Batal</button>
+          <button type="submit" class="btn-gold" id="fotoSubmitBtn">Simpan Foto</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- PEMISAH API: Galeri -> Dear Danella -->
+  <div class="flame-divider" aria-hidden="true">
+    <svg class="fire-svg" viewBox="0 0 1440 240" preserveAspectRatio="xMidYMax slice" focusable="false">
+      <defs>
+        <linearGradient id="fgBack" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8530c"/><stop offset=".55" stop-color="#d4590c"/><stop offset="1" stop-color="#c2570c"/></linearGradient>
+        <linearGradient id="fgMid" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8a1f"/><stop offset=".6" stop-color="#ff7a1a"/><stop offset="1" stop-color="#e8650f"/></linearGradient>
+        <linearGradient id="fgCore" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd25a"/><stop offset=".5" stop-color="#ffab2e"/><stop offset="1" stop-color="#ff8c28"/></linearGradient>
+        <linearGradient id="fgFade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c2570c" stop-opacity="0"/><stop offset=".12" stop-color="#c2570c" stop-opacity=".5"/><stop offset=".34" stop-color="#c2570c" stop-opacity="1"/></linearGradient>
+        <filter id="fireWarp" x="-5%" y="-15%" width="110%" height="130%" color-interpolation-filters="sRGB">
+          <feTurbulence type="fractalNoise" baseFrequency="0.008 0.024" numOctaves="1" seed="4" result="n">
+            <animate attributeName="baseFrequency" dur="7s" repeatCount="indefinite" values="0.008 0.024;0.011 0.03;0.007 0.026;0.008 0.024"/>
+          </feTurbulence>
+          <feDisplacementMap in="SourceGraphic" in2="n" scale="46" xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+        <filter id="fireGlow" x="-5%" y="-15%" width="110%" height="130%"><feGaussianBlur stdDeviation="9"/></filter>
+      </defs>
+      <g filter="url(#fireWarp)">
+      <path fill="url(#fgBack)" d="M-94 262 C-94 157 -32 119 -14 52 C8 119 70 157 70 262Z"/>
+      <path fill="url(#fgBack)" d="M14 262 C14 181 77 152 97 100 C116 152 179 181 179 262Z"/>
+      <path fill="url(#fgBack)" d="M122 262 C122 184 189 156 200 106 C232 156 300 184 300 262Z"/>
+      <path fill="url(#fgBack)" d="M181 262 C181 164 249 129 244 67 C291 129 359 164 359 262Z"/>
+      <path fill="url(#fgBack)" d="M354 262 C354 166 426 131 455 69 C471 131 542 166 542 262Z"/>
+      <path fill="url(#fgBack)" d="M418 262 C418 170 468 137 459 78 C499 137 549 170 549 262Z"/>
+      <path fill="url(#fgBack)" d="M518 262 C518 186 573 159 588 110 C608 159 662 186 662 262Z"/>
+      <path fill="url(#fgBack)" d="M625 262 C625 170 693 137 723 78 C737 137 805 170 805 262Z"/>
+      <path fill="url(#fgBack)" d="M739 262 C739 172 804 140 812 82 C844 140 909 172 909 262Z"/>
+      <path fill="url(#fgBack)" d="M875 262 C875 160 947 123 981 57 C992 123 1064 160 1064 262Z"/>
+      <path fill="url(#fgBack)" d="M945 262 C945 178 999 147 993 93 C1034 147 1089 178 1089 262Z"/>
+      <path fill="url(#fgBack)" d="M1081 262 C1081 159 1140 123 1152 57 C1177 123 1235 159 1235 262Z"/>
+      <path fill="url(#fgBack)" d="M1188 262 C1188 187 1256 160 1262 112 C1300 160 1369 187 1369 262Z"/>
+      <path fill="url(#fgBack)" d="M1299 262 C1299 155 1359 117 1372 48 C1397 117 1457 155 1457 262Z"/>
+      <path fill="url(#fgBack)" d="M1329 262 C1329 162 1392 126 1400 61 C1433 126 1496 162 1496 262Z"/>
+      <path fill="url(#fgMid)" d="M-99 262 C-99 183 -59 155 -35 104 C-33 155 7 183 7 262Z"/>
+      <path fill="url(#fgMid)" d="M-13 262 C-13 209 26 190 19 156 C50 190 89 209 89 262Z"/>
+      <path fill="url(#fgMid)" d="M115 262 C115 195 153 171 162 128 C177 171 214 195 214 262Z"/>
+      <path fill="url(#fgMid)" d="M144 262 C144 208 192 189 213 154 C222 189 270 208 270 262Z"/>
+      <path fill="url(#fgMid)" d="M229 262 C229 206 271 185 274 149 C298 185 340 206 340 262Z"/>
+      <path fill="url(#fgMid)" d="M357 262 C357 203 407 182 439 144 C438 182 488 203 488 262Z"/>
+      <path fill="url(#fgMid)" d="M400 262 C400 186 442 159 461 111 C468 159 510 186 510 262Z"/>
+      <path fill="url(#fgMid)" d="M460 262 C460 206 513 185 519 149 C546 185 599 206 599 262Z"/>
+      <path fill="url(#fgMid)" d="M603 262 C603 203 643 182 637 144 C669 182 709 203 709 262Z"/>
+      <path fill="url(#fgMid)" d="M634 262 C634 205 679 184 698 147 C707 184 753 205 753 262Z"/>
+      <path fill="url(#fgMid)" d="M737 262 C737 183 780 155 793 104 C807 155 850 183 850 262Z"/>
+      <path fill="url(#fgMid)" d="M822 262 C822 207 873 187 874 151 C905 187 956 207 956 262Z"/>
+      <path fill="url(#fgMid)" d="M928 262 C928 205 977 184 979 147 C1009 184 1059 205 1059 262Z"/>
+      <path fill="url(#fgMid)" d="M996 262 C996 206 1048 186 1084 150 C1081 186 1133 206 1133 262Z"/>
+      <path fill="url(#fgMid)" d="M1096 262 C1096 199 1141 177 1138 137 C1170 177 1216 199 1216 262Z"/>
+      <path fill="url(#fgMid)" d="M1113 262 C1113 205 1166 184 1191 148 C1199 184 1251 205 1251 262Z"/>
+      <path fill="url(#fgMid)" d="M1213 262 C1213 194 1263 170 1270 126 C1295 170 1344 194 1344 262Z"/>
+      <path fill="url(#fgMid)" d="M1293 262 C1293 210 1340 191 1344 158 C1371 191 1419 210 1419 262Z"/>
+      <path fill="url(#fgMid)" d="M1397 262 C1397 194 1447 169 1453 125 C1479 169 1529 194 1529 262Z"/>
+      <path fill="url(#fgCore)" d="M-35 262 C-35 238 -11 229 -11 213 C4 229 28 238 28 262Z"/>
+      <path fill="url(#fgCore)" d="M10 262 C10 233 32 223 35 204 C46 223 67 233 67 262Z"/>
+      <path fill="url(#fgCore)" d="M84 262 C84 228 106 215 126 193 C121 215 143 228 143 262Z"/>
+      <path fill="url(#fgCore)" d="M164 262 C164 218 194 203 206 175 C213 203 242 218 242 262Z"/>
+      <path fill="url(#fgCore)" d="M198 262 C198 237 219 229 239 213 C232 229 254 237 254 262Z"/>
+      <path fill="url(#fgCore)" d="M280 262 C280 237 313 229 328 213 C335 229 368 237 368 262Z"/>
+      <path fill="url(#fgCore)" d="M340 262 C340 229 370 217 396 196 C390 217 420 229 420 262Z"/>
+      <path fill="url(#fgCore)" d="M389 262 C389 217 417 201 438 172 C435 201 463 217 463 262Z"/>
+      <path fill="url(#fgCore)" d="M490 262 C490 215 520 199 543 169 C539 199 569 215 569 262Z"/>
+      <path fill="url(#fgCore)" d="M537 262 C537 212 567 194 588 163 C586 194 616 212 616 262Z"/>
+      <path fill="url(#fgCore)" d="M606 262 C606 213 638 196 650 165 C658 196 689 213 689 262Z"/>
+      <path fill="url(#fgCore)" d="M693 262 C693 221 719 207 730 181 C735 207 761 221 761 262Z"/>
+      <path fill="url(#fgCore)" d="M726 262 C726 210 756 191 777 157 C774 191 804 210 804 262Z"/>
+      <path fill="url(#fgCore)" d="M834 262 C834 217 860 201 871 172 C876 201 902 217 902 262Z"/>
+      <path fill="url(#fgCore)" d="M878 262 C878 236 910 226 928 209 C930 226 962 236 962 262Z"/>
+      <path fill="url(#fgCore)" d="M928 262 C928 224 957 211 957 187 C975 211 1004 224 1004 262Z"/>
+      <path fill="url(#fgCore)" d="M1034 262 C1034 220 1061 206 1083 179 C1079 206 1106 220 1106 262Z"/>
+      <path fill="url(#fgCore)" d="M1086 262 C1086 229 1107 218 1119 197 C1120 218 1141 229 1141 262Z"/>
+      <path fill="url(#fgCore)" d="M1148 262 C1148 212 1171 194 1184 162 C1186 194 1209 212 1209 262Z"/>
+      <path fill="url(#fgCore)" d="M1216 262 C1216 229 1249 217 1265 195 C1270 217 1303 229 1303 262Z"/>
+      <path fill="url(#fgCore)" d="M1279 262 C1279 215 1306 198 1327 168 C1322 198 1349 215 1349 262Z"/>
+      <path fill="url(#fgCore)" d="M1385 262 C1385 221 1411 207 1413 181 C1427 207 1453 221 1453 262Z"/>
+      <path fill="url(#fgCore)" d="M1410 262 C1410 214 1438 197 1458 166 C1455 197 1483 214 1483 262Z"/>
+      <rect x="-100" y="160" width="1640" height="130" fill="url(#fgFade)"/>
+      </g>
+    </svg>
+    <span class="flame-spark"></span><span class="flame-spark"></span><span class="flame-spark"></span><span class="flame-spark"></span><span class="flame-spark"></span>
+  </div>
+
+  <!-- DEAR DANELLA -->
+  <section id="dear" class="dear">
+    <div class="deco deco-note deco-note-tl" aria-hidden="true"><span class="crown"><svg viewBox="0 0 32 28" aria-hidden="true"><use href="#i-crown"/></svg></span><span>Team<br />Passion <span class="heart-i"><svg viewBox="0 0 24 24" aria-hidden="true" style="fill:none;stroke:currentColor;stroke-width:1.8"><use href="#i-heart"/></svg></span></span></div>
+    <div class="deco deco-flame deco-flame-tr" aria-hidden="true"><svg viewBox="0 0 120 150"><use href="#i-flame"/></svg></div>
+    <span class="deco deco-spark s1" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-spark"/></svg></span>
+    <span class="deco deco-spark s2" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-spark"/></svg></span>
+    <span class="deco deco-spark s3" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-spark"/></svg></span>
+    <div class="deco deco-heart-br" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></div>
+    <div class="deco deco-flame-bl" aria-hidden="true"></div>
+
+    <div class="dear-content">
+      <p class="eyebrow light">— DEAR DANELLA —</p>
+      <h2>Satu lingkaran, dibentuk dari orang-<br />orang yang menyukai garis yang sama.</h2>
+      <p class="dear-desc">
+        Dear Danella bukan sekadar pesan kesan, tapi juga menjadi improvisasi dan
+        harapan, dengan motivasi dari kalian semua.
+      </p>
+    </div>
+
+    <!-- Daftar pesan + form (samping di laptop) -->
+    <div class="dear-messages-row">
+    <div class="message-form-box">
+      <h3>Kirim Pesan ke Danella</h3>
+      <div class="auth-bar" id="authBar">
+        <p id="authText">Kamu masuk sebagai tamu. Verifikasi email untuk mengirim pesan.</p>
+        <button type="button" class="auth-logout" id="logoutBtn" hidden>Keluar</button>
+      </div>
+      <form id="messageForm" class="message-form">
+        <div class="form-group">
+          <input type="text" id="senderName" placeholder="Namamu" required maxlength="20" autocomplete="name" />
+        </div>
+        <div class="form-group">
+          <textarea id="messageText" placeholder="Tulis pesanmu di sini..." required maxlength="200" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn-gold">Kirim Pesan</button>
+      </form>
+    </div>
+
+    <div class="messages-list-box">
+      <div class="messages-list-header">
+        <span class="hdr-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><use href="#i-chat"/></svg></span>
+        <h3>Pesan dari Fans</h3>
+      </div>
+      <div class="messages-slider-wrap">
+        <button type="button" class="msg-nav msg-prev" id="msgPrev" aria-label="Pesan sebelumnya">‹</button>
+        <div class="messages-list" id="messagesList">
+          <p class="messages-empty" id="messagesEmpty">Belum ada pesan. Jadilah yang pertama</p>
+        </div>
+        <button type="button" class="msg-nav msg-next" id="msgNext" aria-label="Pesan berikutnya">›</button>
+      </div>
+      <div class="messages-dots" id="messagesDots"></div>
+      <a href="messages.html" class="messages-all-link">Lihat Semua Pesan →</a>
+    </div>
+    </div>
+
+    <!-- Popup sukses -->
+    <div class="popup-overlay" id="successPopup" hidden>
+      <div class="popup-box">
+        <div class="popup-icon"></div>
+        <h3>Pesan Berhasil Terkirim!</h3>
+        <p>Terima kasih sudah memberikan pesan kamu.</p>
+        <button type="button" class="btn-gold" id="popupOkBtn">OK</button>
+      </div>
+    </div>
+
+    <div class="join-box">
+      <span class="join-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><use href="#i-people"/></svg></span>
+      <div>
+        <h3>Belum jadi bagian Denalize?</h3>
+        <p>Gabung untuk bertemu teman yang sama mengidolakan Danella.</p>
+      </div>
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSflWeJrWZOvI3f6KlWZrJhuGa7ItC79yPsqo-sLBdF9AjKcIw/viewform"
+        class="btn-gold"
+        target="_blank"
+        rel="noopener noreferrer"
+      ><svg viewBox="0 0 64 64" aria-hidden="true"><use href="#i-people"/></svg>Gabung Sekarang</a>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="kontak" class="kontak">
+    <div class="kontak-grid">
+      <!-- Pantau Danella -->
+      <div class="kontak-card">
+        <p class="eyebrow">— PANTAU DANELLA</p>
+        <h2>Ikuti perjalanan Danella</h2>
+        <div class="social-icons">
+          <a href="https://www.tiktok.com/@danellajkt48" target="_blank" rel="noopener noreferrer" class="social-icon" title="TikTok Danella" aria-label="TikTok Danella">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.88-2.88 2.89 2.89 0 0 1 2.88-2.88c.28 0 .56.04.83.13v-3.5a6.37 6.37 0 0 0-.83-.05A6.34 6.34 0 0 0 3.15 15.3a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.77a8.27 8.27 0 0 0 4.84 1.55V6.86a4.85 4.85 0 0 1-1.08-.17z"/></svg>
+            <span class="social-handle">@danellajkt48</span>
+          </a>
+          <a href="https://instagram.com/jkt48.danella" target="_blank" rel="noopener noreferrer" class="social-icon" title="Instagram Danella" aria-label="Instagram Danella">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95C23.73 2.7 21.31.27 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.41-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+            <span class="social-handle">@jkt48.danella</span>
+          </a>
+          <a href="https://www.threads.net/@jkt48.danella" target="_blank" rel="noopener noreferrer" class="social-icon" title="Threads Danella" aria-label="Threads Danella">
+            <svg viewBox="0 0 977 1082" fill="currentColor" aria-hidden="true"><path d="M770.35 500.35c-1.35-156.85-86.39-251.37-230.02-251.37-95.87 0-176.5 43.36-218.85 112.47l92.82 64.71c24.05-37.94 57.25-69.45 118.23-69.45 68.77 0 104.34 38.28 114.5 109.42-33.2-5.08-66.4-7.79-100.61-7.79-185.65 0-273.05 84.02-273.05 195.13s87.4 179.55 216.14 179.55c141.27 0 225.62-95.19 260.18-213.09 35.91 16.26 60.64 54.2 60.64 111.12 0 152.45-175.82 235.45-324.88 235.45-219.86 0-363.5-144.32-363.5-379.08 0-287.62 190.05-471.91 445.48-471.91 171.42 0 256.11 75.21 313.7 176.16l94.86-66.4C913.31 94.5 773.4 1 563.36 1 228.65 1 1 238.48 1 583.01c0 315.06 222.91 497.99 488.51 497.99 219.52 0 441.42-128.05 441.42-347.24 0-114.5-65.72-190.39-160.58-233.41ZM485.44 718.85c-48.44 0-91.13-23.04-91.13-65.38 0-66.74 81.98-87.06 162.27-87.06 30.49 0 60.3 2.03 86.72 7.79-18.97 86.72-75.21 144.66-157.87 144.66Z"/></svg>
+            <span class="social-handle">@jkt48.danella</span>
+          </a>
+          <a href="https://x.com/Danella_JKT48" target="_blank" rel="noopener noreferrer" class="social-icon" title="X Danella" aria-label="X Danella">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.727-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
+            <span class="social-handle">@Danella_JKT48</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Pantau Denalize -->
+      <div class="kontak-card">
+        <p class="eyebrow">— PANTAU DENALIZE</p>
+        <h2>Ikuti komunitas Denalize</h2>
+                <div class="social-icons">
+          <a href="https://www.tiktok.com/@denalizeid" target="_blank" rel="noopener noreferrer" class="social-icon" title="TikTok Denalize" aria-label="TikTok Denalize">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.88-2.88c.28 0 .56.04.83.13v-3.5a6.37 6.37 0 0 0-.83-.05A6.34 6.34 0 0 0 3.15 15.3a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.77a8.27 8.27 0 0 0 4.84 1.55V6.86a4.85 4.85 0 0 1-1.08-.17z"/></svg>
+            <span class="social-handle">@denalizeid</span>
+          </a>
+          <a href="https://www.instagram.com/denalizeid/" target="_blank" rel="noopener noreferrer" class="social-icon" title="Instagram Denalize" aria-label="Instagram Denalize">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95C23.73 2.7 21.31.27 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.41-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+            <span class="social-handle">@denalizeid</span>
+          </a>
+          <a href="https://www.threads.net/@denalizeid" target="_blank" rel="noopener noreferrer" class="social-icon" title="Threads Denalize" aria-label="Threads Denalize">
+            <svg viewBox="0 0 977 1082" fill="currentColor" aria-hidden="true"><path d="M770.35 500.35c-1.35-156.85-86.39-251.37-230.02-251.37-95.87 0-176.5 43.36-218.85 112.47l92.82 64.71c24.05-37.94 57.25-69.45 118.23-69.45 68.77 0 104.34 38.28 114.5 109.42-33.2-5.08-66.4-7.79-100.61-7.79-185.65 0-273.05 84.02-273.05 195.13s87.4 179.55 216.14 179.55c141.27 0 225.62-95.19 260.18-213.09 35.91 16.26 60.64 54.2 60.64 111.12 0 152.45-175.82 235.45-324.88 235.45-219.86 0-363.5-144.32-363.5-379.08 0-287.62 190.05-471.91 445.48-471.91 171.42 0 256.11 75.21 313.7 176.16l94.86-66.4C913.31 94.5 773.4 1 563.36 1 228.65 1 1 238.48 1 583.01c0 315.06 222.91 497.99 488.51 497.99 219.52 0 441.42-128.05 441.42-347.24 0-114.5-65.72-190.39-160.58-233.41ZM485.44 718.85c-48.44 0-91.13-23.04-91.13-65.38 0-66.74 81.98-87.06 162.27-87.06 30.49 0 60.3 2.03 86.72 7.79-18.97 86.72-75.21 144.66-157.87 144.66Z"/></svg>
+            <span class="social-handle">@denalizeid</span>
+          </a>
+          <a href="https://x.com/DenalizeID" target="_blank" rel="noopener noreferrer" class="social-icon" title="X Denalize" aria-label="X Denalize">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.727-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
+            <span class="social-handle">@DenalizeID</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Danella × Denalize</p>
+    <p>Indonesia</p>
+  </footer>
+
+  <script>
+    if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      var f = document.querySelector(".fire-svg"); if (f && f.pauseAnimations) f.pauseAnimations();
+    }
+  </script>
+  <script type="module" src="script.js"></script>
+  <script type="module" src="schedule.js"></script>
+</body>
+</html>

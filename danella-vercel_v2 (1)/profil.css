@@ -1,0 +1,68 @@
+/* Halaman Profil Lengkap — putih & Tiffany blue (mengikuti halaman utama) */
+.pf-wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: calc(var(--nav-h) + 3rem) 1.5rem 4.5rem;
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 3.5rem;
+  align-items: start;
+}
+.pf-photo { position: sticky; top: calc(var(--nav-h) + 2rem); display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+.pf-photo .image-frame { width: min(100%, 440px); }
+.pf-team-badge {
+  position: absolute; left: 1rem; bottom: 1rem; z-index: 2;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--tosca-800);
+  font-weight: 600; font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 0.45rem 0.95rem; border-radius: 999px;
+  box-shadow: var(--shadow);
+}
+.pf-head .eyebrow { margin-bottom: 0.8rem; }
+.pf-head h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.1; color: var(--text); }
+.pf-head h1 em { font-style: italic; color: var(--tosca-600); font-weight: 500; }
+.pf-sub { margin-top: 0.7rem; color: var(--text-muted); font-size: 1.05rem; line-height: 1.6; }
+.pf-sub strong { color: var(--tosca-800); font-weight: 600; }
+.pf-rule { height: 2px; width: 100%; margin: 1.6rem 0; border: 0; background: linear-gradient(90deg, var(--tosca-500), var(--tosca-200) 70%, transparent); }
+
+.pf-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.pf-item {
+  display: flex; align-items: center; gap: 1rem;
+  background: var(--white);
+  border: 1px solid var(--tosca-200);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.2rem;
+  box-shadow: var(--shadow);
+  transition: transform .25s, box-shadow .25s, border-color .25s;
+}
+.pf-item:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: var(--tosca-400); }
+.pf-ico {
+  flex-shrink: 0; width: 46px; height: 46px; border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--tosca-100); color: var(--tosca-600);
+}
+.pf-ico svg { width: 24px; height: 24px; }
+.pf-label { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--tosca-600); }
+.pf-value { font-family: var(--font-serif); font-size: 1.25rem; font-weight: 600; color: var(--text); margin-top: 0.15rem; }
+
+.pf-journey { margin-top: 2.2rem; background: var(--tosca-100); border-radius: 20px; padding: 1.7rem 1.6rem; }
+.pf-journey h2 { font-size: 1.3rem; margin-bottom: 1.1rem; }
+.pf-steps { list-style: none; position: relative; padding-left: 1.6rem; display: grid; gap: 1.15rem; }
+.pf-steps::before { content: ""; position: absolute; left: 6px; top: 6px; bottom: 6px; width: 2px; background: var(--tosca-400); opacity: .6; }
+.pf-steps li { position: relative; }
+.pf-steps li::before { content: ""; position: absolute; left: -1.6rem; top: .3rem; width: 14px; height: 14px; border-radius: 50%; background: var(--white); border: 3px solid var(--tosca-500); }
+.pf-steps b { display: block; font-size: 0.78rem; letter-spacing: .1em; text-transform: uppercase; color: var(--tosca-600); }
+.pf-steps span { color: var(--text); line-height: 1.55; font-size: .98rem; }
+
+.pf-actions { display: flex; flex-wrap: wrap; gap: .85rem; margin-top: 2rem; }
+
+@media (max-width: 900px) {
+  .pf-wrap { grid-template-columns: 1fr; gap: 2rem; padding: calc(var(--nav-h) + 1.5rem) 1.25rem 3rem; }
+  .pf-photo { position: relative; top: 0; }
+  .pf-head { text-align: center; }
+  .pf-rule { margin: 1.3rem auto; }
+  .pf-actions { justify-content: center; }
+}
+@media (max-width: 480px) {
+  .pf-grid { grid-template-columns: 1fr; }
+}
